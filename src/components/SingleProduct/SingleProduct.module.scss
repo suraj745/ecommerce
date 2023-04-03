@@ -1,0 +1,25 @@
+@import "../../function.scss";
+
+.right {
+  & > :not(:nth-child(1)) {
+    margin-top: 1rem;
+  }
+}
+
+.row {
+  min-height: calc(100vh - 20rem);
+}
+
+.description {
+  & > p {
+    font-size: 1.4rem;
+    color: rgb(65, 65, 65);
+  }
+}
+.right {
+  & > :nth-last-child(1) {
+    & > button {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../function.scss";
+
+.card {
+  @include flex(space-between, center);
+  gap: 2rem;
+
+  @include media("<=768px") {
+    flex-direction: column;
+  }
+
+  & > li {
+    @include flex(center, center);
+  }
+}
+
+.row_cart {
+  min-height: calc(100vh - 10rem);
+}
+
+.counter {
+  & > span {
+    display: inline-block;
+    @include flex(center, center);
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.4rem;
+  }
+
+  & > :not(:nth-child(2)) {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,6 @@
+@import "../../function.scss";
+
+.row {
+  min-height: 100vh;
+  @include flex(center, center);
+}

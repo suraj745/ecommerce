@@ -1,0 +1,29 @@
+@import "../function.scss";
+
+.outer {
+  overflow-x: hidden;
+}
+.side_bar {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.row {
+  overflow-y: scroll;
+  @include media(">=1200px") {
+    height: 100vh;
+  }
+}
+
+@include media("<=1200px") {
+  .sidebar_control {
+    background: white;
+    height: 100vh;
+
+    top: 0rem;
+    right: 0rem;
+    margin: 0rem;
+    padding: 0rem !important;
+    position: absolute;
+  }
+}
